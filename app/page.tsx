@@ -1,12 +1,13 @@
+import { ExamplesNav } from "@/components/example-nav";
 import Navbar from "@/components/header";
+import Hero from "@/components/hero";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 
 const Page = () => {
   return (
-    <div>
-      <Navbar />
-      
-      <h1>Page</h1>
+    <div className="container relative">
+      <Hero />
+      {/* <ExamplesNav className="[&>a:first-child]:text-primary" /> */}
     </div>
   );
 };
