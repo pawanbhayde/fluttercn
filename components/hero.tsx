@@ -1,8 +1,6 @@
 import { Button } from "./ui/button";
 import { Icons } from "./icons";
 import Link from "next/link";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { Separator } from "./ui/separator";
 import { Announcement } from "@/components/announcement";
 import { ExamplesNav } from "@/components/example-nav";
 
@@ -22,11 +20,14 @@ const Hero = () => {
       <div className="container relative">
         <PageHeader>
           <Announcement />
-          <PageHeaderHeading>First Open source component library for{" "}
-          <span className="text-blue-400">Flutter</span></PageHeaderHeading>
+          <PageHeaderHeading>
+            First Open source component library for{" "}
+            <span className="text-blue-400">Flutter</span>
+          </PageHeaderHeading>
           <PageHeaderDescription>
-          shadcn/ui based beautifully designed components that you can copy and
-          paste into your flutter apps. Accessible. Customizable. Open Source.
+            shadcn/ui based beautifully designed components that you can copy
+            and paste into your flutter apps. Accessible. Customizable. Open
+            Source.
           </PageHeaderDescription>
           <PageActions>
             <Link href="/docs">
@@ -67,7 +68,6 @@ const Hero = () => {
           </div>
         </section>
       </div>
-      
     </>
   );
 };

@@ -1,105 +1,63 @@
 import Link from "next/link";
-import { Input } from "./ui/input";
-import { ModeToggle } from "./ui/mode-toggle";
-import { Button } from "./ui/button";
-import { Icons } from "./icons";
+
 import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
+import { CommandMenu } from "@/components/command-menu";
+import { Icons } from "@/components/icons";
+import { MainNav } from "@/components/main-nav";
+import { MobileNav } from "@/components/mobile-nav";
+import { ModeToggle } from "@/components/ui/mode-toggle";
+import { buttonVariants } from "@/components/ui/button";
 
-const Navbar = () => {
+export function SiteHeader() {
   return (
-    <nav className="sticky lg:px-32 h-16 top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 flex justify-between items-center">
-      <div className="flex  items-center  gap-6 max-w-screen-2xl ">
-        <div className="logo flex gap-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 256 256"
-            className="h-6 w-6"
-          >
-            <rect width="256" height="256" fill="none"></rect>
-            <line
-              x1="208"
-              y1="128"
-              x2="128"
-              y2="208"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              strokeWidth="16"
-              className=""
-            ></line>
-            <line
-              x1="192"
-              y1="40"
-              x2="40"
-              y2="192"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              strokeWidth="16"
-              className=""
-            ></line>
-          </svg>
-          <h1 className="text-lg text-">Fluttercn</h1>
-        </div>
-        <div className="flex items-center gap-4 text-sm lg:gap-6">
-          <Link
-            className="transition-colors hover:text-foreground/80 text-foreground/60"
-            href="/"
-          >
-            Docs
-          </Link>
-          <Link
-            className="transition-colors hover:text-foreground/80 text-foreground/60"
-            href="/"
-          >
-            Components
-          </Link>
-          <Link
-            className="transition-colors hover:text-foreground/80 text-foreground/60"
-            href="/"
-          >
-            Themes
-          </Link>
-          <Link
-            className="transition-colors hover:text-foreground/80 text-foreground/60"
-            href="/"
-          >
-            Example
-          </Link>
-          <Link
-            className="transition-colors hover:text-foreground/80 text-foreground/60"
-            href="/"
-          >
-            Blocks
-          </Link>
-          <Link
-            className="transition-colors hover:text-foreground/80 text-foreground/60"
-            href={siteConfig.links.github}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Github
-          </Link>
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-14 max-w-screen-2xl items-center">
+        <MainNav />
+        <MobileNav />
+        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+          <div className="w-full flex-1 md:w-auto md:flex-none">
+            <CommandMenu />
+          </div>
+          <nav className="flex items-center">
+            <Link
+              href={siteConfig.links.github}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div
+                className={cn(
+                  buttonVariants({
+                    variant: "ghost",
+                  }),
+                  "w-9 px-0"
+                )}
+              >
+                <Icons.gitHub className="h-4 w-4" />
+                <span className="sr-only">GitHub</span>
+              </div>
+            </Link>
+            <Link
+              href={siteConfig.links.twitter}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div
+                className={cn(
+                  buttonVariants({
+                    variant: "ghost",
+                  }),
+                  "w-9 px-0"
+                )}
+              >
+                <Icons.twitter className="h-3 w-3 fill-current" />
+                <span className="sr-only">Twitter</span>
+              </div>
+            </Link>
+            <ModeToggle />
+          </nav>
         </div>
       </div>
-      <div className="flex ">
-        <Input type="text" placeholder="Search documentation..." />
-        <Button variant="ghost" size="default">
-          <Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
-            <Icons.gitHub className="h-4 w-4" />
-          </Link>
-        </Button>
-        <Link href={siteConfig.links.twitter} target="_blank" rel="noreferrer">
-          <Button variant="ghost" size="default">
-            <Icons.twitter className="h-3 w-3 fill-current" />
-          </Button>
-        </Link>
-        <ModeToggle />
-      </div>
-    </nav>
+    </header>
   );
-};
-
-export default Navbar;
+}

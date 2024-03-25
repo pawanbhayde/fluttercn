@@ -1,5 +1,4 @@
 import { ExamplesNav } from "@/components/example-nav";
-import Navbar from "@/components/header";
 import Hero from "@/components/hero";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 
