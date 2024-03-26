@@ -1,5 +1,5 @@
 <p align="center">
- <img align="center" src="https://github.com/pawanbhayde/fluttercn/blob/master/readme-assets/loading.gif" height="96" />
+ <img align="center" src="https://github.com/pawanbhayde/fluttercn/blob/master/readme-assets/logo.png" height="96" />
  <h1 align="center">
  fluttercn
  </h1>
