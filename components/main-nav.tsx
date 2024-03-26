@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import * as React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-import { siteConfig } from "@/config/site"
-import { cn } from "@/lib/utils"
-import { Icons } from "@/components/icons"
+import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
+import { Icons } from "@/components/icons";
 
 export function MainNav() {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
     <div className="mr-4 hidden md:flex">
@@ -52,7 +52,7 @@ export function MainNav() {
           Themes
         </Link>
         <Link
-          href="/examples"
+          href="/examples/mail"
           className={cn(
             "transition-colors hover:text-foreground/80",
             pathname?.startsWith("/examples")
@@ -75,6 +75,7 @@ export function MainNav() {
         </Link>
         <Link
           href={siteConfig.links.github}
+          target="_blank"
           className={cn(
             "hidden text-foreground/60 transition-colors hover:text-foreground/80 lg:block"
           )}
@@ -83,5 +84,5 @@ export function MainNav() {
         </Link>
       </nav>
     </div>
-  )
+  );
 }

@@ -12,6 +12,7 @@ import {
 } from "@/components/page-header";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/icons";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Examples",
@@ -40,7 +41,7 @@ export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
             <Link href="/docs">
               <Button>Get Started</Button>
             </Link>
-            <Link href="/components">
+            <Link href={siteConfig.links.github} target="_blank">
               <Button variant="outline" className="flex gap-2">
                 <Icons.gitHub className="h-4 w-4" />
                 Github

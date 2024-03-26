@@ -1,30 +1,34 @@
-type IconProps = React.HTMLAttributes<SVGElement>
+type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
   logo: (props: IconProps) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" {...props}>
-      <rect width="256" height="256" fill="none" />
-      <line
-        x1="208"
-        y1="128"
-        x2="128"
-        y2="208"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="16"
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="20" height="20" rx="2" fill="#1C1C1C" />
+      <path
+        d="M9.66406 11.3053L11.5449 9.47314H16.2171L12.0782 13.612L9.66406 11.3053Z"
+        fill="white"
       />
-      <line
-        x1="192"
-        y1="40"
-        x2="40"
-        y2="192"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="16"
+      <path
+        d="M3.80176 10.079L6.15155 12.4848L16.2172 2.33521H11.545L3.80176 10.079Z"
+        fill="white"
+      />
+      <path
+        d="M7.31152 13.6348L9.69489 15.9829L12.0799 13.6119L9.66579 11.3052L7.31152 13.6348Z"
+        fill="white"
+      />
+      <path
+        d="M9.69434 15.9826L10.8869 14.7971L12.0794 13.6116L16.16 17.7387H11.4616L9.69434 15.9826Z"
+        fill="#FAFAFA"
+      />
+      <path
+        d="M9.69434 15.9831L11.9165 15.2439L11.1678 14.5181L9.69434 15.9831Z"
+        fill="#FAFAFA"
       />
     </svg>
   ),
@@ -145,4 +149,4 @@ export const Icons = {
       <path d="M21 12a9 9 0 1 1-6.219-8.56" />
     </svg>
   ),
-}
+};

@@ -25,9 +25,16 @@ const Hero = () => {
             <span className="text-blue-400">Flutter</span>
           </PageHeaderHeading>
           <PageHeaderDescription>
-            shadcn/ui based beautifully designed components that you can copy
-            and paste into your flutter apps. Accessible. Customizable. Open
-            Source.
+            <a
+              href="https://ui.shadcn.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium underline underline-offset-4"
+            >
+              shadcn/ui
+            </a>{" "}
+            based beautifully designed components that you can copy and paste
+            into your flutter apps. Accessible. Customizable. Open Source.
           </PageHeaderDescription>
           <PageActions>
             <Link href="/docs">
