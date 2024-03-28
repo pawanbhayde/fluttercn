@@ -1,9 +1,12 @@
 <p align="center">
- <img align="center" src="https://github.com/pawanbhayde/fluttercn/blob/master/readme-assets/loading.gif" height="96" />
+ <img align="center" src="https://github.com/pawanbhayde/fluttercn/blob/master/readme-assets/logo.png" height="96" />
  <h1 align="center">
  fluttercn
  </h1>
-
+ <p align="center">
+ shadcn/ui based beautifully designed components that you can copy and paste into your flutter apps. Accessible. Customizable. Open Source.
+ </p>
+ 
 ![Repository Visitors](https://komarev.com/ghpvc/?username=pawanbhayde&color=grey&label=Repository+Visitors&color=red)
 
 
