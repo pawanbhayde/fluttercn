@@ -10,26 +10,125 @@ export const Icons = {
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect width="20" height="20" rx="2" fill="#1C1C1C" />
-      <path
-        d="M9.66406 11.3053L11.5449 9.47314H16.2171L12.0782 13.612L9.66406 11.3053Z"
+      <rect
+        x="2.90723"
+        y="3.98145"
+        width="14.1852"
+        height="2.77778"
+        rx="1.38889"
         fill="white"
       />
-      <path
-        d="M3.80176 10.079L6.15155 12.4848L16.2172 2.33521H11.545L3.80176 10.079Z"
+      <rect
+        x="2.90723"
+        y="8.61133"
+        width="14.1852"
+        height="2.77778"
+        rx="1.38889"
         fill="white"
+        fill-opacity="0.32"
       />
-      <path
-        d="M7.31152 13.6348L9.69489 15.9829L12.0799 13.6119L9.66579 11.3052L7.31152 13.6348Z"
+      <g filter="url(#filter0_d_953_8)">
+        <rect
+          x="2.90723"
+          y="8.61133"
+          width="8.48148"
+          height="2.77778"
+          rx="1.38889"
+          fill="white"
+        />
+      </g>
+      <rect
+        opacity="0.7"
+        x="2.90723"
+        y="13.2407"
+        width="14.1852"
+        height="2.77778"
+        rx="1.38889"
         fill="white"
+        fill-opacity="0.32"
       />
-      <path
-        d="M9.69434 15.9826L10.8869 14.7971L12.0794 13.6116L16.16 17.7387H11.4616L9.69434 15.9826Z"
-        fill="#FAFAFA"
-      />
-      <path
-        d="M9.69434 15.9831L11.9165 15.2439L11.1678 14.5181L9.69434 15.9831Z"
-        fill="#FAFAFA"
-      />
+      <g filter="url(#filter1_d_953_8)">
+        <rect
+          x="2.90723"
+          y="13.2407"
+          width="4.75926"
+          height="2.77778"
+          rx="1.38889"
+          fill="white"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_953_8"
+          x="2.35167"
+          y="8.05577"
+          width="9.96293"
+          height="4.25931"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset dx="0.185185" dy="0.185185" />
+          <feGaussianBlur stdDeviation="0.37037" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_953_8"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_953_8"
+            result="shape"
+          />
+        </filter>
+        <filter
+          id="filter1_d_953_8"
+          x="2.35167"
+          y="12.6852"
+          width="6.24027"
+          height="4.25931"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset dx="0.185185" dy="0.185185" />
+          <feGaussianBlur stdDeviation="0.37037" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_953_8"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_953_8"
+            result="shape"
+          />
+        </filter>
+      </defs>
     </svg>
   ),
   twitter: (props: IconProps) => (
