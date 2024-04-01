@@ -37,8 +37,7 @@ const Features = () => {
             </div>
             <h1 className="font-semibold">Easy Auth Building</h1>
             <p className=" text-muted-foreground ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-              fugiat quam perspiciatis accusamus temporibus debitis.
+              Authentication made easy. Build it fast, focus on the rest.
             </p>
           </div>
         </div>
