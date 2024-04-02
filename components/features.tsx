@@ -119,7 +119,7 @@ const Features = () => {
             </div>
             <h1 className="font-semibold">Active Community</h1>
             <p className=" text-muted-foreground ">
-              We're a team of active maintainers ready to help you whenever you
+              We are a team of active maintainers ready to help you whenever you
               need.
             </p>
           </div>
