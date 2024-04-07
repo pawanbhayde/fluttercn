@@ -4,131 +4,36 @@ export const Icons = {
   logo: (props: IconProps) => (
     <svg
       width="20"
-      height="20"
-      viewBox="0 0 20 20"
+      height="21"
+      viewBox="0 0 20 21"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect width="20" height="20" rx="2" fill="#1C1C1C" />
+      <rect width="20" height="20.2959" rx="5.02959" fill="#1C1C1C" />
       <rect
-        x="2.90723"
-        y="3.98145"
-        width="14.1852"
-        height="2.77778"
-        rx="1.38889"
+        x="5.79883"
+        y="5.02979"
+        width="9.64497"
+        height="2.60355"
+        rx="1.30178"
         fill="white"
       />
       <rect
-        x="2.90723"
-        y="8.61133"
-        width="14.1852"
-        height="2.77778"
-        rx="1.38889"
+        x="5.79883"
+        y="8.87598"
+        width="6.86391"
+        height="2.60355"
+        rx="1.30178"
         fill="white"
-        fill-opacity="0.32"
       />
-      <g filter="url(#filter0_d_953_8)">
-        <rect
-          x="2.90723"
-          y="8.61133"
-          width="8.48148"
-          height="2.77778"
-          rx="1.38889"
-          fill="white"
-        />
-      </g>
       <rect
-        opacity="0.7"
-        x="2.90723"
-        y="13.2407"
-        width="14.1852"
-        height="2.77778"
-        rx="1.38889"
+        x="5.79883"
+        y="12.6035"
+        width="3.90533"
+        height="2.60355"
+        rx="1.30178"
         fill="white"
-        fill-opacity="0.32"
       />
-      <g filter="url(#filter1_d_953_8)">
-        <rect
-          x="2.90723"
-          y="13.2407"
-          width="4.75926"
-          height="2.77778"
-          rx="1.38889"
-          fill="white"
-        />
-      </g>
-      <defs>
-        <filter
-          id="filter0_d_953_8"
-          x="2.35167"
-          y="8.05577"
-          width="9.96293"
-          height="4.25931"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset dx="0.185185" dy="0.185185" />
-          <feGaussianBlur stdDeviation="0.37037" />
-          <feComposite in2="hardAlpha" operator="out" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_953_8"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_953_8"
-            result="shape"
-          />
-        </filter>
-        <filter
-          id="filter1_d_953_8"
-          x="2.35167"
-          y="12.6852"
-          width="6.24027"
-          height="4.25931"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset dx="0.185185" dy="0.185185" />
-          <feGaussianBlur stdDeviation="0.37037" />
-          <feComposite in2="hardAlpha" operator="out" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_953_8"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_953_8"
-            result="shape"
-          />
-        </filter>
-      </defs>
     </svg>
   ),
   twitter: (props: IconProps) => (
