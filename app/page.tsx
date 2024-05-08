@@ -8,7 +8,7 @@ const Page = () => {
     <div className="container relative">
       <Hero />
       <Features />
-      <Community />
+      {/* <Community /> */}
     </div>
   );
 };
