@@ -31,6 +31,7 @@ class PrimaryButton extends ConsumerWidget {
       ),
       body: Center(
         child: MaterialButton(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           height: 50,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8),
@@ -40,9 +41,9 @@ class PrimaryButton extends ConsumerWidget {
             // Add your onPressed logic here
           },
           child: Text(
-            'Primary Button',
-            style: GoogleFonts.poppins(
-                color: isDarkMode ? Colors.black : Colors.white, fontSize: 20),
+            'Button',
+            style: TextStyle(
+                color: isDarkMode ? Colors.black : Colors.white, fontSize: 18),
           ),
         ),
       ),

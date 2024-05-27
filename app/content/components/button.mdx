@@ -1,0 +1,116 @@
+import CodeSnippet from "@/components/codesnippet";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
+# Button
+
+Displays a button or a component that looks like a button.
+
+<br />
+## Primary Button
+<Tabs defaultValue="account" className="w-[400px]">
+  <TabsList>
+    <TabsTrigger value="account">Priview</TabsTrigger>
+    <TabsTrigger value="password">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="account" className="h-[600px]">
+    <iframe
+      src="https://zyc406rayc50.zapp.page/"
+      className="w-full h-[50vh] border overflow-hidden"
+    ></iframe>
+  </TabsContent>
+  <TabsContent value="password">
+    <CodeSnippet
+      code={`MaterialButton(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          height: 50,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
+          color: Colors.black,
+          onPressed: () {
+           
+          },
+          child: Text(
+            'Button',
+            style: TextStyle(
+                color: Colors.white, fontSize: 18),
+          ),
+        ),`}
+      textColor=""
+    />
+  </TabsContent>
+</Tabs>
+
+## Secondary Button
+
+<Tabs defaultValue="account" className="w-[400px]">
+  <TabsList>
+    <TabsTrigger value="account">Priview</TabsTrigger>
+    <TabsTrigger value="password">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="account" className="h-[600px]">
+    <iframe
+      src="https://znju06ifnjv0.zapp.page/"
+      className="w-full h-[50vh] border overflow-hidden"
+    ></iframe>
+  </TabsContent>
+  <TabsContent value="password">
+    <CodeSnippet
+      code={`MaterialButton(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          height: 50,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
+          color: Color(0xffF4F4F5),
+          onPressed: () {
+           
+          },
+          elevation: 0,
+          child: Text(
+            'Secondary',
+            style: TextStyle(
+                color: Colors.black, fontSize: 18),
+          ),
+        ),`}
+      textColor=""
+    />
+  </TabsContent>
+</Tabs>
+
+## Destructive Button
+
+<Tabs defaultValue="account" className="w-[400px]">
+  <TabsList>
+    <TabsTrigger value="account">Priview</TabsTrigger>
+    <TabsTrigger value="password">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="account" className="h-[600px]">
+    <iframe
+      src="https://zmbu06lambv0.zapp.page/"
+      className="w-full h-[50vh] border overflow-hidden"
+    ></iframe>
+  </TabsContent>
+  <TabsContent value="password">
+    <CodeSnippet
+      code={`MaterialButton(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          height: 50,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
+          color: Color(0xffDC2626),
+          onPressed: () {
+           
+          },
+          elevation: 0,
+          child: Text(
+            'Destructive',
+            style: TextStyle(
+                color: Colors.white, fontSize: 18),
+          ),
+        ),`}
+      textColor=""
+    />
+  </TabsContent>
+</Tabs>
