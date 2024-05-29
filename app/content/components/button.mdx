@@ -12,7 +12,7 @@ Displays a button or a component that looks like a button.
     <TabsTrigger value="account">Priview</TabsTrigger>
     <TabsTrigger value="password">Code</TabsTrigger>
   </TabsList>
-  <TabsContent value="account" className="h-[600px]">
+  <TabsContent value="account">
     <iframe
       src="https://zyc406rayc50.zapp.page/"
       className="w-full h-[50vh] border overflow-hidden"
@@ -48,7 +48,7 @@ Displays a button or a component that looks like a button.
     <TabsTrigger value="account">Priview</TabsTrigger>
     <TabsTrigger value="password">Code</TabsTrigger>
   </TabsList>
-  <TabsContent value="account" className="h-[600px]">
+  <TabsContent value="account">
     <iframe
       src="https://znju06ifnjv0.zapp.page/"
       className="w-full h-[50vh] border overflow-hidden"
@@ -85,7 +85,7 @@ Displays a button or a component that looks like a button.
     <TabsTrigger value="account">Priview</TabsTrigger>
     <TabsTrigger value="password">Code</TabsTrigger>
   </TabsList>
-  <TabsContent value="account" className="h-[600px]">
+  <TabsContent value="account">
     <iframe
       src="https://zmbu06lambv0.zapp.page/"
       className="w-full h-[50vh] border overflow-hidden"
@@ -112,5 +112,53 @@ Displays a button or a component that looks like a button.
         ),`}
       textColor=""
     />
+  </TabsContent>
+</Tabs>
+
+## Outline Button
+
+<Tabs defaultValue="account" className="w-[400px]">
+  <TabsList>
+    <TabsTrigger value="account">Priview</TabsTrigger>
+    <TabsTrigger value="password">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="account">
+    <iframe
+      src="https://zjcc062mkcd0.zapp.page/"
+      className="w-full h-[50vh] border overflow-hidden"
+    ></iframe>
+  </TabsContent>
+  <TabsContent value="password">
+    <CodeSnippet
+      code={`MaterialButton(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          height: 50,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+            side: BorderSide(
+              width: 1.0,
+                    color: Colors.black,
+                    style: BorderStyle.solid
+            )
+            
+          ),
+          
+          color: Colors.transparent,
+          onPressed: () {
+           
+          },
+          hoverElevation: 0,
+          highlightElevation: 0,
+
+          elevation: 0,
+          child: Text(
+            'Outline',
+            style: TextStyle(
+                color: Colors.black, fontSize: 18),
+          ),
+        ),`}
+      textColor=""
+    />
+
   </TabsContent>
 </Tabs>

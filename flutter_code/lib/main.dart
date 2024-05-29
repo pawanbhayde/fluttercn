@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_code/components/accordion.dart';
 import 'package:flutter_code/components/primarybutton.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends ConsumerWidget {
       theme: ThemeData(
         brightness: isDarkMode ? Brightness.dark : Brightness.light,
       ),
-      home: const PrimaryButton(),
+      home: AccordionExample(),
     );
   }
 }

@@ -1,14 +1,13 @@
 import {
   Breadcrumb,
+  BreadcrumbList,
   BreadcrumbItem,
   BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import Index from "@/app/content/index.mdx";
+import Index from "@/app/content/changelog.mdx";
 
-const Page = () => {
+const ChangeLog = () => {
   return (
     <div className="lg:container flex relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_300px]">
       <div className="flex-2 flex flex-col gap-3 mx-auto w-full min-w-0">
@@ -19,7 +18,7 @@ const Page = () => {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink href="/docs">Introduction</BreadcrumbLink>
+              <BreadcrumbLink href="/docs/changelog">Changelog</BreadcrumbLink>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
@@ -29,4 +28,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default ChangeLog;

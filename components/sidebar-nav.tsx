@@ -10,7 +10,9 @@ const SideBar = () => {
           <div className="flex flex-col space-y-2">
             {docsConfig.sidebarNav.map((item, index) => (
               <div key={index} className="flex flex-col space-y-3 pt-6">
-                <h4 className="font-medium">{item.title}</h4>
+                <h4 className="mb-1 rounded-md px- py-1 text-sm font-semibold">
+                  {item.title}
+                </h4>
                 {item?.items?.length &&
                   item.items.map((item) => (
                     <React.Fragment key={item.href}>
@@ -18,7 +20,7 @@ const SideBar = () => {
                         (item.href ? (
                           <Link
                             href={item.href}
-                            className="text-muted-foreground"
+                            className="text-muted-foreground text-sm"
                           >
                             {item.title}
                             {item.label && (

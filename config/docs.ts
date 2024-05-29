@@ -38,16 +38,6 @@ export const docsConfig: DocsConfig = {
                     items: [],
                 },
                 {
-                    title: "Installation",
-                    href: "/docs/installation",
-                    items: [],
-                },
-                {
-                    title: "components.json",
-                    href: "/docs/components-json",
-                    items: [],
-                },
-                {
                     title: "Theming",
                     href: "/docs/theming",
                     items: [],
@@ -58,18 +48,8 @@ export const docsConfig: DocsConfig = {
                     items: [],
                 },
                 {
-                    title: "CLI",
-                    href: "/docs/cli",
-                    items: [],
-                },
-                {
                     title: "Typography",
                     href: "/docs/components/typography",
-                    items: [],
-                },
-                {
-                    title: "Figma",
-                    href: "/docs/figma",
                     items: [],
                 },
                 {
@@ -116,12 +96,13 @@ export const docsConfig: DocsConfig = {
                     title: "Breadcrumb",
                     href: "/docs/components/breadcrumb",
                     items: [],
-                    label: "New",
+
                 },
                 {
                     title: "Button",
                     href: "/docs/components/button",
                     items: [],
+                    label: "New",
                 },
                 {
                     title: "Calendar",
@@ -207,7 +188,7 @@ export const docsConfig: DocsConfig = {
                     title: "Input OTP",
                     href: "/docs/components/input-otp",
                     items: [],
-                    label: "New",
+                    // label: "New",
                 },
                 {
                     title: "Label",

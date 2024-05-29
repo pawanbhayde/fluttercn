@@ -11,7 +11,7 @@ import {
 
 const Features = () => {
   return (
-    <div className="container relative pt-36 pb-36">
+    <div className="lg:container relative pt-36 pb-36">
       <div className="pb-10 flex flex-col items-center gap-4">
         <h1 className="text-center text-2xl font-bold leading-tight tracking-tighter md:text-4xl lg:leading-[1.1]">
           Features of <span className="text-blue-400">Fluttercn</span>

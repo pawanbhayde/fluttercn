@@ -17,7 +17,7 @@ import MailPage from "@/app/examples/mail/page";
 const Hero = () => {
   return (
     <>
-      <div className="container relative">
+      <div className="lg:container relative">
         <PageHeader>
           <Announcement />
           <PageHeaderHeading>
